@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    .logo a{
+        font-family: 'Akaya Kanadaka', cursive;
+        text-decoration: none;
+        font-size: 40px;
+    }
+   .header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 0;
+    }
+    .menu ul{
+        list-style: none;
+        display: flex;
+       flex-direction: row;
+   }
+    .menu ul li a{
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    padding: 10px 20px;
+    display: block;
+   }
+   .banner img{
+    width: 100%;
+    border: 1px solid black;
+    padding: 5px;
+   }
+   .banner{
+    margin-bottom: 15px;
+   }
+   .welcome{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-between;
+   }
+   .welcome-menu{
+       flex-basis: 15%;
+   }
+   .welcome-content{
+       flex-basis: 85%;
+   }
+   .welcome-menu h4,.welcome-content h4 {
+       text-transform: capitalize;
+       font-size: 20px;
+       margin-bottom: 10px;
+   }
+   .welcome-menu ul{
+       list-style: none;
+   }
+   .welcome-menu ul li a{
+       text-decoration: none;
+       color: darkcyan;
+       font-size: 18px;
+   }
+   .welcome-inner{
+       display: flex;
+       flex-wrap: wrap;
+       margin-top: 25px;
+       justify-content: space-between;
+   }
+   .single-welcome{
+       flex-basis: 48%;
+   }
+   .services{
+       background-color: rgb(245, 238, 238);
+       padding: 30px 10px;
+   }
+   .title{
+       text-align: center;
+       margin-bottom: 30px;
+   }
+   .title h4{
+       text-transform: uppercase;
+       font-size: 30px;
+   }
+   .services-box{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-between;
+   }
+   .single-service{
+       flex-basis: 32%;
+   }
+   .single-service img{
+      width: 100%; 
+   }
+   .single-service h4{
+       font-size: 20px;
+       margin-bottom: 10px;
+   }
+   .single-service a,.about-left a{
+       background-color: tomato;
+       display: inline-block;
+       text-decoration: none;
+       text-transform: capitalize;
+       color: white;
+       font-size: 16px;
+       padding: 10px 15px;
+       margin-top: 20px;
+       border-radius: 10px;
+   }
+   .about{
+       padding: 20px 0;
+       display: flex;
+       flex-flow: row wrap;
+       justify-content: space-between;
+   }
+   .about-left{
+       flex-basis: 80%;
+   }
+   .about-left h4,.about-menu h4{
+       text-transform: capitalize;
+       font-size: 20px;
+       margin-bottom: 10px;
+   }
+   .about-menu{
+       flex-basis: 20%;
+   }
+   .about-menu ul{
+       list-style: none;
+   }
+   .about-menu ul li a{
+       text-decoration: none;
+       font-size: 16px;
+       color: red;
+   }
+   .footer-top{
+       padding: 20px 0;
+       display: flex;
+       flex-flow: row wrap;
+       justify-content: space-between;
+   }
+   .single-footer h4{
+       font-size: 22px;
+       margin-bottom: 10px;
+   }
+   .single-footer:nth-child(1){
+       flex-basis: 20%;
+   }
+   .single-footer:nth-child(2){
+       flex-basis: 40%;
+   }
+   .single-footer:nth-child(3){
+       flex-basis: 40%;
+   }
+   .footer{
+       text-align: center;
+       background-color:cadetblue;
+       color: whitesmoke;
+       padding: 10px;
+       width: 100%;
+       font-weight: bold;
+   }
+   /* Responsive Section  */
+   /* Medium Layout */
+   @media only screen and (min-width: 992px) and (max-width: 1200px){
+       .area{
+           width: 970px;
+       }
+       .welcome-menu{
+           flex-basis: 15%;
+       }
+       .welcome-content{
+           flex-basis: 85%;
+       }
+   }
+   /* Template Layout */
+   @media only screen and (min-width: 763px) and (max-width: 991px){
+       .area{
+           width: 750px;
+       }
+       .welcome-menu{
+           flex-basis: 20%;
+       }
+       .welcome-content{
+           flex-basis: 80%;
+       }
+   }
+   /* Moble Layout */
+   @media only screen and (max-width: 767px){
+       .area{
+           width: 320px;
+       }
+       .menu ul{
+           flex-direction: column;
+       }
+   }
+    </style>
+        
+</head>
+<body>
+    <div class="area">
+        <div class="header">
+            <div class="logo">
+                <a href=""><h1>Abu Rushd Nakib</h1></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="jim.jpg" alt="">
+        </div>
+        <div class="welcome">
+            <div class="welcome-menu">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="welcome-content">
+                <h4>Welcome to our website</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum error ipsa est hic facere! Molestias laboriosam officiis minus blanditiis totam autem unde at suscipit porro. Ut iure consequatur, dolorem vel officiis totam cupiditate nisi id, obcaecati repellendus earum dolores iste.</p>
+                <div class="welcome-inner">
+                    <div class="single-welcome">
+                        <h4>Our Mission</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima cumque provident ex aliquam placeat optio veniam dolor ducimus at quisquam!
+                        </p>
+                    </div>
+                    <div class="single-welcome">
+                        <h4>Our Vision</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima cumque provident ex aliquam placeat optio veniam dolor ducimus at quisquam!
+                        </p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="services">
+            <div class="title">
+                <h4>Our Services</h4>
+            </div>
+                <div class="services-box">
+                    <div class="single-service">
+                        <h4>Service-1</h4>
+                        <img src="it1.jfif" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit saepe molestiae perferendis quo? Eum, officiis tempore quae accusantium et iure!</p>
+                        <a href="">Read More</a>
+                    </div>
+                    <div class="single-service">
+                        <h4>Servic-2</h4>
+                        <img src="it1.jfif" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit saepe molestiae perferendis quo? Eum, officiis tempore quae accusantium et iure!</p>
+                        <a href="">Read More</a>
+                    </div>
+                    <div class="single-service">
+                        <h4>Service-3</h4>
+                        <img src="it1.jfif" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit saepe molestiae perferendis quo? Eum, officiis tempore quae accusantium et iure!</p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        <div class="about">
+            <div class="about-left">
+                <h4>About Us</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem inventore qui, sapiente odio reiciendis minima exercitationem consectetur praesentium dicta id dolores quas! Odit, nesciunt enim?</p>
+                <a href="">Read More</a>
+            </div>
+            <div class="about-menu">
+                <h4>Sidebar Menu</h4>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-top">
+            <div class="single-footer">
+                <h4>Footer Title</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem inventore qui, sapiente odio reiciendis minima exercitationem consectetur praesentium dicta id dolores quas! Odit, nesciunt enim?</p>
+            </div>
+            <div class="single-footer">
+                <h4>Footer Title</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem inventore qui, sapiente odio reiciendis minima exercitationem consectetur praesentium dicta id dolores quas! Odit, nesciunt enim?</p>
+            </div>
+            <div class="single-footer">
+                <h4>Footer Title</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem inventore qui, sapiente odio reiciendis minima exercitationem consectetur praesentium dicta id dolores quas! Odit, nesciunt enim?</p>
+            </div>
+            <div class="footer">
+                <p>&copy;Abu Rusnd Nakib 2021</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
